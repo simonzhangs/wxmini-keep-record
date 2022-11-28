@@ -1,0 +1,12 @@
+<view class='player-container'>
+    <van-image 
+    round
+    width="2rem"
+    height="2rem"
+    fit="contain"
+    src="{{imageUrl}}"
+    animation="{{animation}}"
+    />
+    <van-icon name="play-circle-o" />
+    player
+</view>

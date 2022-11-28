@@ -1,0 +1,10 @@
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" bind:search="gotoSearchPage" bind:change="onChange" />
+<van-cell title="热门歌单" value="点击刷新" is-link icon="service-o" bindtap="getHotPlaylists" />
+<view>
+    <view wx:for="{{hotPlaylists}}" wx:for-item="hotLists" wx:key="index">
+        <view class="playlistCard">
+            <image src="{{hotLists.picUrl}}" mode="widthFix"></image>
+            <view data-listid="{{hotLists.id}}" bindtap="gotoPlaylistPage" class="listname">{{hotLists.name}}</view>
+        </view>
+    </view>
+</view>

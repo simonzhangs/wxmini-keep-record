@@ -1,0 +1,14 @@
+<!-- pages/playlist/index.wxml -->
+<view wx:for="{{tracks}}" wx:key="index">
+    <view catchtap="gotoPlayMusic" data-musicid="{{item.id}}" data-index="{{index}}" data-src="{{item.al.picUrl}}" class="music-list">
+        <view class="music-inline">
+            <image src="{{item.al.picUrl}}" mode="aspectFit" />
+            <view class="music-name">{{item.name}}</view>
+        </view>
+        <van-icon name="play-circle-o" />
+    </view>
+</view>
+<view wx:if="{{isPlayerShow}}" class="player">
+    <player imageUrl="{{picUrl}}" />
+    <view>{{musicname}}</view>
+</view>

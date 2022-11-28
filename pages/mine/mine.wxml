@@ -1,0 +1,27 @@
+<!-- pages/mine/mine.wxml -->
+<view class="user-info">
+    <!-- <image src="" /> -->
+    <view>Your name</view>
+</view>
+<van-cell-group>
+    <van-cell is-link title="去听歌" icon="service-o" link-type="switchTab" url="/pages/index/index" />
+</van-cell-group>
+<van-cell-group>
+    <van-cell title="设置" is-link icon="more-o" />
+    <van-cell title="关于" is-link icon="info-o" />
+    <van-cell title="免责声明" is-link bind:click="showPopup" />
+</van-cell-group>
+
+<!-- 自定义图标 -->
+<van-popup
+  show="{{ isPopShow }}"
+  round
+  closeable
+  close-icon="close"
+  position="bottom"
+  custom-style="height: 40%"
+  bind:close="onClose"
+>
+此小程序仅供交流学习，严禁以任何形式独立发布或用于商业用途；
+小程序中使用api非官方api，仅供交流学习使用，严禁以任何形式独立发布或用于商业用途。
+</van-popup>

@@ -1,0 +1,35 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/mine/mine",
+        "pages/playlist/index",
+        "pages/search/index",
+        "pages/record/index"
+    ],
+    "window": {
+        "backgroundColor": "#fff",
+        "navigationBarBackgroundColor": "#2980b9"
+    },
+    "tabBar": {
+        "color": "#7f8c8d",
+        "selectedColor": "#2980b9",
+        "borderStyle": "black",
+        "backgroundColor": "#f7f7f7",
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "text": "今日音乐"
+            },
+            {
+                "pagePath": "pages/record/index",
+                "text": "健身记录"
+            },
+            {
+                "pagePath": "pages/mine/mine",
+                "text": "我"
+            }
+        ]
+    },
+    "requiredBackgroundModes": ["audio"],
+    "sitemapLocation": "sitemap.json"
+}

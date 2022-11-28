@@ -1,0 +1,1 @@
+export const music_api = "https://netease-cloud-music-api-two-rust.vercel.app";

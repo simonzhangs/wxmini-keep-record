@@ -1,0 +1,6 @@
+{
+    "usingComponents": {
+        "player": "../components/player/index",
+        "van-icon": "@vant/weapp/icon/index"
+    }
+}

@@ -1,0 +1,29 @@
+/* pages/index/index.wxss */
+.playlistCard {
+  width: 250rpx;
+  height: 350rpx;
+  float: left;
+}
+
+.listname,
+image {
+  width: 235rpx;
+  height: 235rpx;
+  border-radius: 25rpx 25rpx;
+  margin: 0 10rpx;
+}
+
+.listname {
+  height: 100rpx;
+  /* margin: 20rpx; */
+  font-size: 24rpx;
+  /* overflow: hidden; */
+  /* 内容末尾追加省略号。 */
+  text-overflow: ellipsis;
+  /* 使用自适应布局方式显示 */
+  display: -webkit-box;
+  /* 限定最多 2 行 */
+  -webkit-line-clamp: 2;
+  /* 垂直方向超出隐藏 */
+  -webkit-box-orient: vertical;
+}
